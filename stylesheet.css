@@ -28,7 +28,7 @@ header{
     z-index: 10;
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 
 }
 
@@ -56,18 +56,22 @@ header{
     transition: all 0.5s;
 }
 
-body{
+.all-container{
+    width:100%;
+    /*全体を幅に合わせて変えたい*/
+}
+
+.top-container{
     background-image:url(https://prog-8.com/images/html/advanced/top.png);
     background-size:cover;
-    text-align:center;
-    color: white;
+    text-align:center; 
 }
 
 .text-container{
     display: inline-block;
     padding: 180px 0 100px 0;
     width: 1170px;
-    display: inline-block;
+    color:white;
 }
 
 h1{
@@ -131,4 +135,113 @@ span{
 
 .fa {
     margin-right: 5px;
-  }
+}
+
+.lesson-wrapper{
+    width:100%;
+    background-color: #f7f7f7;
+}
+
+.lesson-container{
+    width: 1170px;
+    height: 580px;
+    margin:0 auto;
+}
+
+.lesson-heading{
+    width:100%;
+    color: #5f5d60;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.lesson-heading h2 {
+    font-weight: normal;
+}
+
+.lesson {
+    float: left;
+    width: 25%;
+    /*幅に対し25%ずつの大きさになる*/
+    text-align: center;
+}
+
+.lesson-icon{
+    position: relative;
+}
+
+.lesson-icon p{
+    position: absolute;
+    top:90px;
+    width:100%;
+    color:white;
+}
+
+.lesson-text{
+    width:80%;
+    display: inline-block;
+    margin: 15px;
+    font-size: 13px;
+    color:#b3aeb5;
+}
+
+.message-wrapper{
+    text-align: center; 
+    margin-top: 80px;
+}
+
+.massage-container{
+    margin:0 auto;
+    width: 1170px;
+    color: #5f5d60;
+    margin-bottom: 80px;
+}
+
+.massege-text{
+    margin-bottom:50px;
+}
+
+.massage-container h3{
+    font-weight: normal;
+}
+
+.btn-start{
+    color: white;
+    background-color: #5dca88;
+    opacity: 0.8;
+    padding:15px 40px;
+    border-radius: 4px;
+    box-shadow: 0px 7px #1a7940;
+}
+
+.btn-start:hover{
+    opacity: 1;
+
+}
+
+.btn-start:active{
+    box-shadow:none;
+    position:relative;
+    top:7px;
+}
+
+.footer-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    border-top: 1px #eee;
+}
+
+.footer-container{
+    padding-top: 30px;
+}
+
+.footer-img{
+    width: 124px;
+}
+
+.footer-text{
+    color: #b3aeb5;
+    font-size: 12px;
+    padding-bottom:30px;
+}
